@@ -21,7 +21,9 @@ Start with ${chalk.bold('yarn/npm start')}`,
         }
     },
     filters: {
-        '_eslintrc.js': '!lint'
+        '_eslintrc.js': '!lint',
+        'src/components/widget-demo.**': 'addonType ==="widget"',
+        'src/components/config-demo.**': 'addonType ==="config"'
     },
     prompts: {
         name: {
@@ -40,6 +42,32 @@ Start with ${chalk.bold('yarn/npm start')}`,
             type: 'string',
             label: '作者',
             default: '{{author}}'
+        },
+        addonType: {
+            type: 'list',
+            message: '选择创建的组件类型',
+            choices: [
+                {
+                    name: 'widget-仪表盘部件',
+                    value: 'widget',
+                    short: 'widget'
+                },
+                {
+                    name: 'config-配置',
+                    value: 'config',
+                    short: 'config'
+                }
+                // {
+                //     name: 'task-任务',
+                //     value: 'task',
+                //     short: 'task'
+                // },
+                // {
+                //     name: 'view-自定义视图',
+                //     value: 'view',
+                //     short: 'view'
+                // }
+            ]
         },
         lint: {
             type: 'confirm',

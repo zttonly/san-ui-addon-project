@@ -3,18 +3,18 @@
  * @author {{author}}
  */
 
-import './mydemo.less';
+import './widget-demo.less';
 
 export default {
     template: /* html */`
-        <div class="mydemo">
+        <div class="widget-demo">
             <div>{{hello}}</div>
             <div>{{$t('san-cli-ui-widget-mydemo.welcome')}}</div>
         </div>
     `,
     initData() {
         return {
-            hello: 'hello san ui'
+            hello: 'hello san ui widget'
         };
     }
 }
