@@ -1,0 +1,7 @@
+{
+    "{{name}}": {
+        "welcome": "welcome mydemo widget",
+        "title": "测试widget标题",
+        "description": "mydemo的描述信息"
+    }
+}
