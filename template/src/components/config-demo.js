@@ -8,8 +8,8 @@ import './config-demo.less';
 export default {
     template: /* html */`
         <div class="config-demo">
-            <div>{{hello}}</div>
-            <div>{{$t('{{name}}.welcome')}}</div>
+            <div>\{\{hello}}</div>
+            <div>\{\{$t('{{name}}.welcome')}}</div>
         </div>
     `,
     initData() {

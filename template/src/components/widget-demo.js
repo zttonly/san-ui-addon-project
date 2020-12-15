@@ -8,8 +8,8 @@ import './widget-demo.less';
 export default {
     template: /* html */`
         <div class="widget-demo">
-            <div>{{hello}}</div>
-            <div>{{$t('san-cli-ui-widget-mydemo.welcome')}}</div>
+            <div>\{\{hello}}</div>
+            <div>\{\{$t('{{name}}.welcome')}}</div>
         </div>
     `,
     initData() {
