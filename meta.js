@@ -11,7 +11,7 @@ Start with ${chalk.bold('yarn/npm start')}`,
     },
     helpers: {
         /* eslint-disable fecs-camelcase */
-        if_or: (v1, v2, options) => {
+        if_or(v1, v2, options) {
             /* eslint-enable fecs-camelcase */
             if (v1 || v2) {
                 return options.fn(this);
@@ -22,10 +22,10 @@ Start with ${chalk.bold('yarn/npm start')}`,
     },
     filters: {
         '_eslintrc.js': '!lint',
-        'src/components/widget-demo.js': 'addonType ==="widget"',
-        'src/components/widget-demo.less': 'addonType ==="widget"',
-        'src/components/config-demo.js': 'addonType ==="config"',
-        'src/components/config-demo.less': 'addonType ==="config"'
+        'src/components/widget-demo.js': 'addonType !== "widget"',
+        'src/components/widget-demo.less': 'addonType !== "widget"',
+        'src/components/config-demo.js': 'addonType !== "config"',
+        'src/components/config-demo.less': 'addonType !== "config"'
     },
     prompts: {
         name: {

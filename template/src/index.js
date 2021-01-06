@@ -11,6 +11,6 @@ if (window.ClientAddonApi) {
     ClientAddonApi.addLocales(locales);
     {{#if_eq addonType "widget"}}
     // 推荐以类型前缀定义组件的唯一id：'san.widget'
-    ClientAddonApi.defineComponent('san.{{addonType}}.components.widget-demo', widgetdemo);
+    ClientAddonApi.defineComponent('san.widget.components.widget-demo', widgetdemo);
     {{/if_eq}}
 }

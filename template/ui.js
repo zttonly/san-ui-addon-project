@@ -21,11 +21,11 @@ module.exports = api => {
     
     // 接下来注册widget
     api.registerWidget({
-        id: 'san.{{addonType}}.widget-demo', // 命名不重复即可
+        id: 'san.widget.widget-demo', // 命名不重复即可
         title: '{{name}}.title', // locales定义的文案
         description: '{{name}}.description',
         icon: 'smile', // santd的icon类型
-        component: 'san.{{addonType}}.components.widget-demo', // 指定显示的组件id, 值对应src/index.js注册的组件名
+        component: 'san.widget.components.widget-demo', // 指定显示的组件id, 值对应src/index.js注册的组件名
         // 接下来具体组件的配置信息
         minWidth: 2,
         minHeight: 2,
