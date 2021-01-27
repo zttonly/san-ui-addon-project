@@ -23,9 +23,7 @@ Start with ${chalk.bold('yarn/npm start')}`,
     filters: {
         '_eslintrc.js': '!lint',
         'src/components/widget-demo.js': 'addonType !== "widget"',
-        'src/components/widget-demo.less': 'addonType !== "widget"',
-        'src/components/config-demo.js': 'addonType !== "config"',
-        'src/components/config-demo.less': 'addonType !== "config"'
+        'src/components/widget-demo.less': 'addonType !== "widget"'
     },
     prompts: {
         name: {
