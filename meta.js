@@ -69,6 +69,10 @@ Start with ${chalk.bold('yarn/npm start')}`,
                 // }
             ]
         },
+        closeCssModule: {
+            type: 'confirm',
+            message: '是否关闭 cssModule'
+        },
         lint: {
             type: 'confirm',
             message: '是否安装 ESLint？'

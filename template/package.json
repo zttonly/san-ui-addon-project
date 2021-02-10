@@ -35,6 +35,9 @@
     "less-loader": "~5.0.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.8",
+    {{#closeCssModule}}
+    "postcss-selector-namespace": "^3.0.1",
+    {{/closeCssModule}}
     "autoprefixer": "^9.7.5",
     "postcss-url": "^7.2.1",
     "san-cli": "^3.0.0",

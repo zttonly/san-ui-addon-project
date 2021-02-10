@@ -7,13 +7,13 @@ module.exports = api => {
     // 注册addon 区分生产环境和开发环境
     if (process.env.SAN_CLI_UI_DEV) { // 开发环境
         api.registerAddon({
-            id: 'san.{{addonType}}.{{name}}.client-addon.dev',
+            id: 'san.{{addonType}}.{{name}}.dev',
             url: 'http://localhost:8890/index.js' // 开发环境地址，也即本地服务地址
         });
     }
     else { // 生产环境
         api.registerAddon({
-            id: 'san.{{addonType}}.{{name}}.client-addon', // addon的唯一id，推荐增加类型前缀'san.widgets'
+            id: 'san.{{addonType}}.{{name}}', // addon的唯一id，推荐增加类型前缀'san.widgets'
             path: '{{name}}/dist' // 生产环境指向本插件包的编译产出地址
         });
     }
